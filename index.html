@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Peminjaman Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Sistem Peminjaman Buku Perpustakaan</h2>
+
+
+<!-- FORM INPUT -->
+<form id="formPeminjaman">
+  <label>Nama Peminjam</label><br>
+  <input type="text" id="nama" placeholder="Masukkan nama">
+
+  <label>Pilih Buku</label><br>
+  <select id="buku">
+    <option>-- Pilih Buku --</option>
+    <option>Laut Bercerita</option>
+    <option>Madilog</option>
+    <option>Bumi Manusia</option>
+    <option>Don Quixote</option>
+  </select><br><br>
+
+  <label>Tanggal Pinjam</label><br>
+  <input type="date" id="tglPinjam"><br><br>
+
+  <label>Tanggal Kembali</label><br>
+  <input type="date" id="tglKembali"><br><br>
+
+  <button>Simpan</button>
+</form>
+
+<br><br>
+
+<!-- TABEL DATA -->
+<!-- TABEL DATA -->
+<table border="1" cellpadding="8">
+  <tr>
+    <th>No</th>
+    <th>Nama</th>
+    <th>Judul Buku</th>
+    <th>Tanggal Pinjam</th>
+    <th>Tanggal Kembali</th>
+    <th>Status</th>
+    <th>Aksi</th>
+  </tr>
+
+  <tbody id="dataTable">
+  </tbody>
+</table>
+
+</table>
+<script src="script.js"></script>
+</body>
+</html>
